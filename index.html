@@ -29,19 +29,25 @@
         animation="property: rotation;
           to: 0 360 0;
           loop: true;
-          dur: 5000;
+          dur: 10000;
           easing: linear"
         > </a-sphere>
       <a-cylinder position="0 0 -5" color="#d05c77" radius="2.5" height=".25" rotation="0 -90 0" position=""></a-cylinder>
       <!-- Open cylinder for people-->
       <a-cylinder 
-          src="#connected-people2" 
+          src="#connected-people2"
+          
           position="0 1.25 -5"
           radius="2" 
           height=".5"
-          material="transparent: true"
           open-ended="true"
-          rotation="0 30  0"
+          rotation="-3 30  3"
+          animation="property: rotation;
+            to: 3 0 -3;
+            dir: alternate;
+            loop: true;
+            dur: 2000;
+            easing: linear"
           >
         </a-cylinder>
       
@@ -53,21 +59,21 @@
         rotation='0 0 40'>
       </a-cylinder>
       <a-cylinder 
-        position="-1.35 1.75 -3.75" 
+        position="-1.35 1 -4" 
         radius="0.025"
         height=".1" 
         color=black
         rotation='60 0 20'>
       </a-cylinder>
       <a-cylinder 
-          position="0 1.5 -3.5" 
+          position="0 1.5 -3" 
           radius="0.025"
           height=".1" 
           color=black
           rotation='30 0 0'>
       </a-cylinder>
       <a-cylinder 
-        position="1.35 1.75 -3.75" 
+        position="1.35 1 -4" 
         radius="0.025"
         height=".1" 
         color=black
@@ -81,21 +87,21 @@
         rotation='0 0 320'>
       </a-cylinder>
       <a-cylinder 
-        position="1.35 1.75 -7" 
+        position="1.35 1 -6" 
         radius="0.025"
         height=".1" 
         color=black
         rotation='-60 0 -20'>
      </a-cylinder>
       <a-cylinder 
-        position="0 1.5 -7.5" 
+        position="0 1.5 -7" 
         radius="0.025"
         height=".1" 
         color=black
         rotation='-30 0 0'>
       </a-cylinder>
       <a-cylinder 
-        position="-1.25 1.75 -6.75" 
+        position="-1.25 1 -6" 
         radius="0.025"
         height=".27" 
         color=black
