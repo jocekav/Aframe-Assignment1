@@ -19,6 +19,7 @@
         <img id="left-person" src="left-person.png" transparent="true" alpha-test="0.5">     
         <img id="right-person" src="right-person.png" transparent="true" alpha-test="0.5">
         <img id="connected-people2" src="connected-people2.png" transparent="true" alpha-test="0.5">
+        <img id="motion-lines" src="motion-lines.png" transparent="true" alpha-test="0.5">
         <img id="world" src="world-flatten.png">    
        </a-assets>     
 
@@ -50,70 +51,22 @@
             easing: linear"
           >
         </a-cylinder>
-      
+
       <a-cylinder 
-        position="-2 1.5 -5" 
-        radius="0.025"
+        src="#motion-lines"
         material="transparent: true"
-        height=".1" 
-        color=black
-        rotation='0 0 40'>
-      </a-cylinder>
-      <a-cylinder 
-        position="-1.35 1 -4" 
-        radius="0.025"
-        material="transparent: true"
-        height=".1" 
-        color=black
-        rotation='60 0 20'>
-      </a-cylinder>
-      <a-cylinder 
-          position="0 1.5 -3" 
-          radius="0.025"
-          material="transparent: true"
-          height=".1" 
-          color=black
-          rotation='30 0 0'>
-      </a-cylinder>
-      <a-cylinder 
-        position="1.35 1 -4" 
-        radius="0.025"
-        material="transparent: true"
-        height=".1" 
-        color=black
-        rotation='300 0 340'>
-      </a-cylinder>
-      <a-cylinder 
-        position="2 1.5 -5" 
-        radius="0.025"
-        material="transparent: true"
-        height=".1" 
-        color=black
-        rotation='0 0 320'>
-      </a-cylinder>
-      <a-cylinder 
-        position="1.35 1 -6" 
-        radius="0.025"
-        material="transparent: true"
-        height=".1" 
-        color=black
-        rotation='-60 0 -20'>
-     </a-cylinder>
-      <a-cylinder 
-        position="0 1.5 -7" 
-        radius="0.025"
-        material="transparent: true"
-        height=".1" 
-        color=black
-        rotation='-30 0 0'>
-      </a-cylinder>
-      <a-cylinder 
-        position="-1.25 1 -6" 
-        radius="0.025"
-        material="transparent: true"
-        height=".27" 
-        color=black
-        rotation='-300 0 -340'>
+        position="0 1.25 -5"
+        radius="2.2" 
+        height=".5"
+        open-ended="true"
+        animation="property: scale;
+          from: 1 1 1;
+          to: 1.05 1.05 1.05;
+          dir: alternate;
+          loop: true;
+          dur: 1000;
+          easing: linear"
+        >
       </a-cylinder>
     
       <a-sky color="#c6332e"></a-sky>
